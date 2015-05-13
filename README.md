@@ -1,7 +1,7 @@
 docker-salt
 ===========
 
-This is docker project for build Salt Master as container app.
+This is docker project for run Salt Master as container app.
 
 How it's work
 ===========
