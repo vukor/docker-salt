@@ -36,6 +36,11 @@ How it's work
 
     `` docker exec dockersalt_salt_1 salt '*' test.ping ``
 
+8. For full manage run:
+
+    `` docker exec dockersalt_salt_1 -ti /bin/bash ``
+
+
 Share dirs
 ===========
 
