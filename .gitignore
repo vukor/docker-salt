@@ -1,0 +1,3 @@
+## ignore salt states
+states/*
+!states/.keep
