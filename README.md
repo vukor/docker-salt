@@ -30,15 +30,19 @@ How it's work
 
 6. For register clients run:
 
-    `` docker exec dockersalt_salt_1 salt-key -a CLIENT-HOSTNAME -y``
+    `` docker exec salt-master salt-key -a CLIENT-HOSTNAME -y``
 
-7. Ater this you can check clients running:
+7. After this you can check clients running:
 
-    `` docker exec dockersalt_salt_1 salt '*' test.ping ``
+    `` docker exec salt-master salt '*' test.ping ``
 
-8. For full manage run:
+8. Put your receipts to /states and run:
+ 
+    `` docker exec salt-master salt '*' state.highstate ``
 
-    `` docker exec dockersalt_salt_1 -ti /bin/bash ``
+9. For full manage run:
+
+    `` docker exec salt-master -ti /bin/bash ``
 
 
 Share dirs
